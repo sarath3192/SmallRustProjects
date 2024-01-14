@@ -1,0 +1,7 @@
+[workspace]
+members = ["rustlib",
+           "rustlib/maths",
+           "rustlib/uselib",
+    # ... add more crate paths as needed
+]
+resolver = "2"
