@@ -1,5 +1,5 @@
 [package]
-name = "rust-dyn"
+name = "size_of_struct_enum"
 version = "0.1.0"
 edition = "2021"
 

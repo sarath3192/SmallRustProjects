@@ -22,8 +22,8 @@ let mut y = 10;
 let reference_mut = &mut y; // Mutable reference to y
 // let reference_mut1 = &mut y;
 
-println!("Value of y before: {}", y);
-*reference_mut = 20;
+// println!("Value of y before: {}", y);
+// *reference_mut = 20;
  // Modify the value through the mutable reference
 // println!("Value of y after: {}", y);
 }

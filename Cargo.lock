@@ -15,6 +15,10 @@ name = "rustlib"
 version = "0.1.0"
 
 [[package]]
+name = "size_of_struct_enum"
+version = "0.1.0"
+
+[[package]]
 name = "uselib"
 version = "0.1.0"
 dependencies = [

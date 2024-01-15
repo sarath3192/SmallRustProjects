@@ -3,6 +3,9 @@ members = ["rustlib",
            "rustlib/maths",
            "rustlib/uselib",
            "rust-stat-dyn",
-    # ... add more crate paths as needed
-]
+           #"rust-stat-dyn/dynamic_dispatch",
+           #"rust-stat-dyn/static_dispatch",
+           "size-of-struct-enum"
+    # ... add more crate paths as needed 
+    ]
 resolver = "2"
