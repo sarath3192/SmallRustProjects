@@ -1,0 +1,1 @@
+pub static MY_STATIC_STRING: &str = "Hello, World!";

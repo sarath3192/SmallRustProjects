@@ -1,5 +1,6 @@
-pub mod sub_two_num;
-pub mod add_two_num;
+mod sub_two_num;
+mod add_two_num;
+// super::{add, wel_add};
 
 use add_two_num::{print_welcome, add};
 use sub_two_num::{sub, print_leaving};

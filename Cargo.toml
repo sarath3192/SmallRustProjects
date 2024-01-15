@@ -5,7 +5,11 @@ members = ["rustlib",
            "rust-stat-dyn",
            #"rust-stat-dyn/dynamic_dispatch",
            #"rust-stat-dyn/static_dispatch",
-           "size-of-struct-enum"
+           "size-of-struct-enum",
+           "lifetime",
+           "super1",
+           "static_lifetime"
+
     # ... add more crate paths as needed 
-    ]
+    , "lifetime", "super1", "static_lifetime"]
 resolver = "2"
