@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "maths"
+name = "dynamic_dispatch"
 version = "0.1.0"
 
 [[package]]
@@ -11,12 +11,5 @@ name = "rust-dyn"
 version = "0.1.0"
 
 [[package]]
-name = "rustlib"
+name = "static_dispatch"
 version = "0.1.0"
-
-[[package]]
-name = "uselib"
-version = "0.1.0"
-dependencies = [
- "maths",
-]

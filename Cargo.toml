@@ -2,6 +2,7 @@
 members = ["rustlib",
            "rustlib/maths",
            "rustlib/uselib",
+           "rust-stat-dyn",
     # ... add more crate paths as needed
 ]
 resolver = "2"
