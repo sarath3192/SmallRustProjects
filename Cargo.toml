@@ -9,8 +9,13 @@ members = ["rustlib",
            "lifetime",
            "super1",
            "static_lifetime",
-           "type_state_programming"
+           "type_state_programming",
+           "grpc-demo-tonic",
+           "lifetime",
+           "super1",
+           "static_lifetime",
+           "send_sync_trait",
+           "type_state_programming" 
+        ]
 
-    # ... add more crate paths as needed 
-    , "lifetime", "super1", "static_lifetime", "send_sync_trait", "type_state_programming"]
 resolver = "2"

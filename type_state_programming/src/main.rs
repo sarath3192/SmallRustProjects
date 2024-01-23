@@ -1,9 +1,14 @@
+// These implementations you can find at this link
+// https://zerotomastery.io/blog/rust-typestate-patterns/
+
+
 // mod typestate1;
 
 // use std::marker::PhantomData;
 
-mod generic_typestate;
-use generic_typestate::*;
+// mod generic_typestate;
+// mod shiping_chain;
+// use generic_typestate::*;
 
 fn main() {
     
