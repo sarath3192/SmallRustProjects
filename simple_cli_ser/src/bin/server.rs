@@ -1,4 +1,4 @@
-use std::{io::Write, net::{TcpListener, TcpStream}};
+use std::{io::{Read, Write}, net::{TcpListener, TcpStream}};
 
 fn main() {
     let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
@@ -10,8 +10,10 @@ fn main() {
 
     // let listen = listener.incoming();
 
-    let buff:[u8; 6] = [1,3,3,6,8,7].into();
+    let buff:[u8; 6] = [1,3,3,6,8,7];
+    let mut buff1:[u8;6] = [1,4,4,5,6,0];
 
+    println!("{:?}\n",buff1);
     println!("listening for the incomming stream\n");
 
     for stream in listener.incoming() {
@@ -19,6 +21,15 @@ fn main() {
         match stream {
               Ok(mut k) => {
 
+                match k.read(&mut buff1){
+                    Ok(n) => {
+                      println!("{}",n)
+                    },
+                    Err(e) => {
+                      println!("{}",e)
+                    },
+                }
+                println!("{:?}\n",buff1);
                 match k.write(&buff){
                     Ok(n) => {
                     println!("{}",n)
