@@ -1,6 +1,24 @@
 //const TEST1: &[Num; 6] = &[Num{n: 2}, Num{n: 53}, Num{n: 51}, Num{n: 5}, Num{n: 50},Num{n: 52}];
 
 /*************Iterator**************/
+#[derive(Debug)]
+struct root_test{
+    num: Vec<i32>,
+}
+
+impl root_test{
+    pub fn empty() -> Self {
+        Self { num: Vec::new()}
+    }
+}
+
+fn main(){
+
+let mut t = root_test::empty();
+t.num.push(1);
+t.num.push(2);
+println!("{:?}",t);
+}
 // #[derive(Debug,PartialEq)]                                           // use when data has to be shared safely between threads.
 // struct Num{
 //     n: u32,

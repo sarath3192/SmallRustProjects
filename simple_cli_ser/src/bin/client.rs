@@ -27,6 +27,8 @@ fn main() {
             }
             println!("{:?}",buff)
         },
-        Err(e) => todo!(),
+        Err(e) => {
+            println!("{}\n",e);
+        },
     }
 }

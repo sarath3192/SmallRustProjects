@@ -16,7 +16,9 @@ members = ["rustlib",
            "static_lifetime",
            "send_sync_trait",
            "type_state_programming", 
-           "simple_cli_ser"
-        ]
+           "simple_cli_ser",
+           "TLS_examples", 
+           "Design_patterns",
+           "default-value"]
 
 resolver = "2"
