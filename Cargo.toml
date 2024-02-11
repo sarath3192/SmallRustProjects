@@ -19,6 +19,9 @@ members = ["rustlib",
            "simple_cli_ser",
            "TLS_examples", 
            "Design_patterns",
-           "default-value"]
+           "default-value",
+           "AAsimple_test",
+           "passwordManager",
+           "crypto", "candle"]
 
 resolver = "2"

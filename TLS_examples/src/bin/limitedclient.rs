@@ -5,10 +5,21 @@ use std::sync::Arc;                         // This Atomically reference counter
  
                                             // use when data has to be shared safely between threads
 fn main(){
-    let root_store = rustls::RootCertStore::from_iter(      // Here RootCertStore is initialized how
-        webpki_roots::TLS_SERVER_ROOTS   // TLS_SERVER_ROOTS has constant data related to root certificates which is generated
-            .iter()               // This will be used to convert the constant roots to iterable items
-            .cloned(),                                     // This is used to create a copy of the roots so that we not modify the original constants
-    );
+    // let root_store = rustls::RootCertStore::from_iter(      // Here RootCertStore is initialized how
+    //     webpki_roots::TLS_SERVER_ROOTS  let root_store = rustls::RootCertStore::from_iter(      // Here RootCertStore is initialized how
+    //     webpki_roots::TLS_SERVER_ROOTS   // TLS_SERVER_ROOTS has constant data related to root certificates which is generated
+    //         .iter()               // This will be used to convert the constant roots to iterable items
+    //         .cloned(),                                     // This is used to create a copy of the roots so that we not modify the original constants
+    // ); // TLS_SERVER_ROOTS has constant data related to root certificates which is generated
+    //         .iter()               // This will be used to convert the constant roots to iterable items
+    //         .cloned(),                                     // This is used to create a copy of the roots so that we not modify the original constants
+    // );
+
+let m =    CryptoProvider {
+        cipher_suites: vec![ring::cipher_suite::TLS13_CHACHA20_POLY1305_SHA256],
+        kx_groups: vec![ring::kx_group::X25519],
+        ..ring::default_provider()
+    };
+    println!("{:?}", m);
 }
 

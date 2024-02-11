@@ -1,24 +1,50 @@
 //const TEST1: &[Num; 6] = &[Num{n: 2}, Num{n: 53}, Num{n: 51}, Num{n: 5}, Num{n: 50},Num{n: 52}];
 
-/*************Iterator**************/
-#[derive(Debug)]
-struct root_test{
-    num: Vec<i32>,
-}
+use crate::learning::SomeOptions;
 
-impl root_test{
-    pub fn empty() -> Self {
-        Self { num: Vec::new()}
+/*************Iterator**************/
+mod learning{
+    #[derive(Default, Debug)]
+    pub struct SomeOptions {
+        foo: i32,
+        bar: f32,
+        star: char,
+    }
+
+    pub fn greet(){
+        println!("Hello World\n");
     }
 }
+fn main() {
+    let options = SomeOptions { bar: 1.23, foo: 32, star: 'a' };
+    let option1 = SomeOptions{ bar: 12.0,..options};
 
-fn main(){
-
-let mut t = root_test::empty();
-t.num.push(1);
-t.num.push(2);
-println!("{:?}",t);
+    println!("{:?} {:?}", options, option1);
 }
+// fn main(){
+//     let mut vec = Vec::<u32>::new();
+// vec.push(1);
+// // vec.push(2);
+
+// }
+// #[derive(Debug)]
+// struct root_test{
+//     num: Vec<i32>,
+// }
+
+// impl root_test{
+//     pub fn empty() -> Self {
+//         Self { num: Vec::new()}
+//     }
+// }
+
+// fn main(){
+
+// let mut t = root_test::empty();
+// t.num.push(1);
+// t.num.push(2);
+// println!("{:?}",t);
+// }
 // #[derive(Debug,PartialEq)]                                           // use when data has to be shared safely between threads.
 // struct Num{
 //     n: u32,
